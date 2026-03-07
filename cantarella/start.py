@@ -36,9 +36,9 @@ REACTIONS = [
 ]
 
 
-dev_text = "👨‍💻 Mind Behind This Bot:\n• @DmOwner"
+dev_text = "👨‍💻 Mind Behind This Bot:\n• @DmOwner\n• @akaza7902"
 expected_dev_hash = "b9e63b7578bdec13f3cb3162fe5f5e93dccaba3bfd5c8ddacbb90ffdcdcce402"
-channels_text = "📢 Official Channels:\n• @ReX_update\n\nStay updated for new features!"
+channels_text = "📢 Official Channels:\n• @ReX_update\n• @THEUPDATEDGUYS\n\nStay updated for new features!"
 expected_channels_hash = "e19212e571bd0f6626450dd790029d392c0748c554d4b386a0c0752f4148d37d"
 
 if (
@@ -250,8 +250,8 @@ async def send_start(client: Client, message: Message):
             InlineKeyboardButton("ℹ️ About Bot", callback_data="about_btn")
         ],
         [
-            InlineKeyboardButton('📢 Channels', callback_data="channels_info"),
-            InlineKeyboardButton('👨‍💻 Developers', callback_data="dev_info")
+            InlineKeyboardButton('📢 Channels', url="https://t.me/DmOwner"),
+            InlineKeyboardButton('👨‍💻 Developers', url="https://t.me/DmOwner")
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
